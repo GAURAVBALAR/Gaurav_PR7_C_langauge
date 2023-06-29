@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-int calc(){
-	int a,sum,minus,multi,divi,per,b,cal;
-	int output;
+float calc(){
+	float a,sum,minus,multi,divi,per,b;
+	int cal;
 	printf("Press 1 for +\n");
 	printf("Press 2 for -\n");
 	printf("Press 3 for *\n");
@@ -20,47 +20,47 @@ int calc(){
 	switch(cal){
 	case 1:
 	printf("Enter Number A:");
-	scanf("%d",&a);
+	scanf("%f",&a);
 	printf("Enter Number B:");
-	scanf("%d",&b);
+	scanf("%f",&b);
 	sum=a+b;
-	printf("Sum of A&B is: %d\n",sum);
+	printf("Sum of A&B is: %.2f\n",sum);
 	break;
 	
 	case 2:
 	printf("Enter Number A:");
-	scanf("%d",&a);
+	scanf("%f",&a);
 	printf("Enter Number B:");
-	scanf("%d",&b);
+	scanf("%f",&b);
 	minus=a-b;
-	printf("Substraction of A&B is: %d\n",minus);
+	printf("Substraction of A&B is: %.2f\n",minus);
 	break;
 	
 	case 3:
 	printf("Enter Number A:");
-	scanf("%d",&a);
+	scanf("%f",&a);
 	printf("Enter Number B:");
-	scanf("%d",&b);
+	scanf("%f",&b);
 	multi=a*b;
-	printf("Multiplication of A&B is: %d\n",multi);
+	printf("Multiplication of A&B is: %.2f\n",multi);
 	break;
 	
 	case 4:
 	printf("Enter Number A:");
-	scanf("%d",&a);
+	scanf("%f",&a);
 	printf("Enter Number B:");
-	scanf("%d",&b);
+	scanf("%f",&b);
 	divi=a/b;
-	printf("Division of A&B is: %d\n",divi);
+	printf("Division of A&B is: %.2f\n",divi);
 	break;
 	
 	case 5:
-	printf("Enter Number A:");
-	scanf("%d",&a);
-	printf("Enter Number B:");
-	scanf("%d",&b);
-	per=(b/a)*100;
-	printf("Percentage of A of B is: %d\n",per);
+	printf("Enter your Number A:");
+	scanf("%f",&a);
+	printf("Enter your Number B:");
+	scanf("%f",&b);
+	per=(b*100)/a;
+	printf("Percentage of A of B is: %.2f\n",per);
 	break;	
 	
 	default:
